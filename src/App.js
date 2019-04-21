@@ -1,25 +1,45 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import Receipt from "./components/Receipt";
 import './App.css';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      receipts: []
+    }
+  }
+
+  // addReceipt = () => {
+  //   let newReceipt = {
+  //     items: [],
+  //     total: 0.00
+  //   }
+  //   this.setState({
+  //     receipts: [...this.state.receipts, newReceipt]
+  //   })
+  // }
+
+  // deleteReceipt = (receiptIndex) => {
+
+  // }
+
+  // renderReceipts = () => {
+  //   return this.state.receipts.map((receipt, index) =>
+  //     <Receipt key={index} id={index} deleteReceipt={this.deleteReceipt} {...receipt}/>
+  //   );
+  // }
+
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <h3>Receipt Generator</h3>
+
+        {/* {this.renderReceipts()} */}
+        <Receipt />
+
+        {/* <button onClick={this.addReceipt}>addReceipt</button> */}
+
       </div>
     );
   }
