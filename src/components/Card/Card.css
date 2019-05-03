@@ -1,0 +1,21 @@
+.card {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background: rgb(230, 228, 228);
+    margin: 0 auto;
+    width: 50%;
+    height: 400px;
+    max-width: 400px;
+    min-width: 300px;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.blocks {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px 10px;
+}

@@ -1,0 +1,10 @@
+.block {
+    background: rgb(119, 204, 219);
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    border: 2px solid rgb(104, 160, 233);
+    display: flex;
+    flex-grow: 1;
+}

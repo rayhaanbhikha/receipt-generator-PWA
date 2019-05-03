@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import Receipt from "./components/Receipt";
+// import Receipt from "./components/Receipt";
+import Card from "./components/Card/Card";
+
 import './App.css';
 
 class App extends Component {
@@ -36,7 +38,7 @@ class App extends Component {
         <h3>Receipt Generator</h3>
 
         {/* {this.renderReceipts()} */}
-        <Receipt />
+        <Card />
 
         {/* <button onClick={this.addReceipt}>addReceipt</button> */}
 

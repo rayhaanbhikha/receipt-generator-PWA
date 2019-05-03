@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import Items from "./Items"
-
+import "./Receipt.css";
+import Block from "./Block/Block"
+import PriceBlocks from "./PriceBlocks/PriceBlocks";
 
 
 class Receipt extends Component {
@@ -24,15 +26,18 @@ class Receipt extends Component {
         })
     }
 
+    renderBlocks = () => {
+        return [...Array(5)].map((e, i) => <Block key={i} id={i+1}/>)
+    }
 
     render() {
         return (
-            <div className="receipt">
-                <Items updateTotal={this.updateTotal} />
-                <div>
-                    Total:  {this.state.total}
+            <React.Fragment>
+                <div className="receipt">
+                    <PriceBlocks />
                 </div>
-            </div>
+
+            </React.Fragment>
         )
     }
 }
