@@ -4,5 +4,6 @@
     padding: 10px;
     margin: 5px;
     display: flex;
-    flex-grow: 1;
+    align-self: center;
+    /* flex-grow: 1; */
 }

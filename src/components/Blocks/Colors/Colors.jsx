@@ -14,7 +14,7 @@ const Colors = props => {
     return (
         <div className="price-blocks blocks">
             {colors.map(({text, color, bgColor}, index) =>
-                <Block key={index} text={text} value={text} style={getStyle(color, bgColor)} />)
+                <Block key={index} text={text} value={text} style={getStyle(color, bgColor)} blockEventHandler={props.blockEventHandler}/>)
             }
         </div>
     )

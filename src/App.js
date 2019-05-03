@@ -8,37 +8,25 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      receipts: []
+      blockEvent: ""
     }
   }
 
-  // addReceipt = () => {
-  //   let newReceipt = {
-  //     items: [],
-  //     total: 0.00
-  //   }
-  //   this.setState({
-  //     receipts: [...this.state.receipts, newReceipt]
-  //   })
-  // }
 
-  // deleteReceipt = (receiptIndex) => {
-
-  // }
-
-  // renderReceipts = () => {
-  //   return this.state.receipts.map((receipt, index) =>
-  //     <Receipt key={index} id={index} deleteReceipt={this.deleteReceipt} {...receipt}/>
-  //   );
-  // }
-
+  handleBlockEvent = (event) => this.setState({
+    blockEvent: event
+  })
   render() {
     return (
       <div className="App">
         <h3>Receipt Generator</h3>
 
+        <div>
+          Block event: {this.state.blockEvent}
+        </div>
+
         {/* {this.renderReceipts()} */}
-        <Card />
+        <Card blockEventHandler={this.handleBlockEvent}/>
 
         {/* <button onClick={this.addReceipt}>addReceipt</button> */}
 

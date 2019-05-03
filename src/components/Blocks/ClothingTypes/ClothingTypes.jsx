@@ -10,7 +10,7 @@ const ClothingTypes = props => {
     return (
         <div className="clothing-type-blocks blocks">
             {clothingTypes.map((clothingType, index) =>
-                <Block key={index} text={clothingType} value={clothingType} style={style}/>)
+                <Block key={index} text={clothingType} value={clothingType} style={style} blockEventHandler={props.blockEventHandler}/>)
             }
         </div>
     )

@@ -32,11 +32,11 @@ export default class Card extends Component {
                         {this.state.hidden ?  <img src="arrow_up.svg" alt="" /> :  <img src="arrow_down.svg" alt="" />}
                     </div>
                     <div className="card" hidden={this.state.hidden}>
-                        <Prices />
+                        <Prices blockEventHandler={this.props.blockEventHandler}/>
                         <hr className="hr" />
-                        <ClothingTypes />
+                        <ClothingTypes blockEventHandler={this.props.blockEventHandler}/>
                         <hr className="hr" />
-                        <Colors />
+                        <Colors blockEventHandler={this.props.blockEventHandler}/>
                     </div>
                 </div>
             </div>

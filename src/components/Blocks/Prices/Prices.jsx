@@ -10,7 +10,7 @@ const Prices = props => {
     return (
         <div className="price-blocks blocks">
             {prices.map((price, index) =>
-                <Block key={index} text={`£${price.toString()}`} value={price} style={style} />)
+                <Block key={index} text={`£${price.toString()}`} value={price} style={style} blockEventHandler={props.blockEventHandler}/>)
             }
         </div>
     )
