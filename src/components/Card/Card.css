@@ -3,11 +3,10 @@
     justify-content: center;
 }
 
-.card {
-    overflow: scroll;
+.card-wrapper2 {
+    background: rgb(230, 228, 228);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    background: rgb(230, 228, 228);
     margin: 0 auto;
     width: 80%;
     max-height: 600px;
@@ -15,6 +14,10 @@
     min-width: 300px;
     position: absolute;
     bottom: 0;
+}
+
+.card {
+    overflow: scroll;
 }
 
 .blocks {
